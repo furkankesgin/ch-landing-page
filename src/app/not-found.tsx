@@ -1,9 +1,6 @@
-'use client';
-
 import { Box } from '@mui/material';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import * as React from 'react';
 import { RiAlarmWarningFill } from 'react-icons/ri';
 
@@ -12,7 +9,6 @@ export const metadata: Metadata = {
 };
 
 const NotFound = () => {
-	const pathname = usePathname();
 	return (
 		<main>
 			<Box sx={{ textAlign: 'center' }}>
@@ -22,7 +18,6 @@ const NotFound = () => {
 						className='drop-shadow-glow animate-flicker text-red-500'
 					/>
 					<h1>Page Not Found</h1>
-					<div>{pathname} NOT exists</div>
 					<h5>change this in app/not-found.tsx</h5>
 					<Link href='/'>Back to home</Link>
 					<div>

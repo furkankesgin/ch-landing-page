@@ -5,14 +5,14 @@ import { Box, Button } from '@mui/material';
 import Link from 'next/link';
 
 const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void; }) => {
+	console.error(error);
+
 	return (
 		<main>
 			<section>
 				<Box sx={{ textAlign: 'center' }}>
 					<WarningIcon />
 					<h1>Oops, something went wrong!</h1>
-					<h5>change this in app/error.tsx</h5>
-					<h4>{error.message}</h4>
 					<Box sx={{ m: 5 }}>
 						<Button onClick={reset}>Try again</Button>
 					</Box>

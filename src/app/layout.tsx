@@ -9,6 +9,8 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 import THEME from '@/theme/theme';
+import AppMetadata from '@/data/const/app-metadata';
+import { Metadata } from 'next';
 
 const roboto = Roboto({
 	weight: ['300', '400', '500', '700'],
@@ -17,42 +19,7 @@ const roboto = Roboto({
 	variable: '--font-roboto',
 });
 
-// export const metadata: Metadata = {
-//   title: {
-//     default: SITE_CONFIG.title,
-//     template: `%s | ${SITE_CONFIG.title}`,
-//   },
-//   description: SITE_CONFIG.description,
-//   robots: { index: true, follow: true },
-//   metadataBase: new URL(SITE_CONFIG.url),
-//   icons: {
-//     icon: '/favicon/favicon.ico',
-//     shortcut: '/favicon/favicon-16x16.png',
-//     apple: '/favicon/apple-touch-icon.png',
-//   },
-//   manifest: `/favicon/site.webmanifest`,
-//   openGraph: {
-//     url: SITE_CONFIG.url,
-//     title: SITE_CONFIG.title,
-//     description: SITE_CONFIG.description,
-//     siteName: SITE_CONFIG.title,
-//     images: [`${SITE_CONFIG.url}/images/og.jpg`],
-//     type: 'website',
-//     locale: 'en_US',
-//   },
-//   twitter: {
-//     card: 'summary_large_image',
-//     title: SITE_CONFIG.title,
-//     description: SITE_CONFIG.description,
-//     images: [`${SITE_CONFIG.url}/images/og.jpg`],
-//   },
-//   authors: [
-//     {
-//       name: 'Alex',
-//       url: 'https://hihb.com',
-//     },
-//   ],
-// };
+export const metadata: Metadata = AppMetadata.DefaultMetadata;
 
 const RootLayout = ({ children }: { children: React.ReactNode; }) => {
 	return (
