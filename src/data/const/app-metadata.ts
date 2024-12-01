@@ -1,10 +1,13 @@
+import { Metadata } from "next";
+
 const DefaultMetadata: Metadata = {
     title: {
       default: "Codehosue",
+      template: "%s | Codehosue",
     },
     description: "Outsource solutions",
     robots: { index: true, follow: true },
-    metadataBase: new URL(SITE_CONFIG.url),
+    // metadataBase: new URL(SITE_CONFIG.url),
     icons: {
       icon: '/favicon.ico',
       shortcut: '/favicon.ico',
@@ -12,7 +15,7 @@ const DefaultMetadata: Metadata = {
     },
     // manifest: `/site.webmanifest`,
     openGraph: {
-      url: SITE_CONFIG.url,
+      // url: SITE_CONFIG.url,
       title: "Codehosue",
       description: "Outsource solutions",
       siteName: "Codehosue",
