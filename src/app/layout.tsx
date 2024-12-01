@@ -1,4 +1,4 @@
-import { Container, ThemeProvider } from '@mui/material';
+import { Container, CssBaseline, ThemeProvider } from '@mui/material';
 import { Roboto } from 'next/font/google';
 import React from 'react';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
@@ -27,9 +27,9 @@ const RootLayout = ({ children }: { children: React.ReactNode; }) => {
 			<body className={roboto.variable}>
 				<AppRouterCacheProvider>
 					<ThemeProvider theme={THEME}>
-						<Container disableGutters>
-							{children}
-						</Container>
+						<CssBaseline />
+
+						{children}
 					</ThemeProvider>
 				</AppRouterCacheProvider>
 			</body>

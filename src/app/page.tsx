@@ -1,11 +1,13 @@
-import { Box, Typography } from '@mui/material';
+import OurServices from '@/app/(components)/our-services/our-services';
+import { Box } from '@mui/material';
 
-const AppHome = async () => {
+const AppHome = () => {
 	return (
-		<Box>
-			<Typography>
-				hello world
-			</Typography>
+		<Box
+			display="flex"
+			flexDirection="column"
+		>
+			<OurServices />
 		</Box>
 	);
 };
