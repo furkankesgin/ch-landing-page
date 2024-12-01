@@ -1,9 +1,22 @@
-import { Container } from '@mui/material';
-import * as React from 'react';
+import { Container, ThemeProvider } from '@mui/material';
+import { Roboto } from 'next/font/google';
+import React from 'react';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
-// !STARTERCONF Change these default meta
-// !STARTERCONF Look at @/constant/config to change them
+import THEME from '@/theme/theme';
+
+const roboto = Roboto({
+	weight: ['300', '400', '500', '700'],
+	subsets: ['latin'],
+	display: 'swap',
+	variable: '--font-roboto',
+});
+
 // export const metadata: Metadata = {
 //   title: {
 //     default: SITE_CONFIG.title,
@@ -41,18 +54,20 @@ import * as React from 'react';
 //   ],
 // };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang='en'>
-      <body>
-        <Container sx={{ pl: 0, pr: 0 }}>
-          {children}
-        </Container>
-      </body>
-    </html>
-  );
+const RootLayout = ({ children }: { children: React.ReactNode; }) => {
+	return (
+		<html lang="en">
+			<body className={roboto.variable}>
+				<AppRouterCacheProvider>
+					<ThemeProvider theme={THEME}>
+						<Container disableGutters>
+							{children}
+						</Container>
+					</ThemeProvider>
+				</AppRouterCacheProvider>
+			</body>
+		</html>
+	);
 }
+
+export default RootLayout;

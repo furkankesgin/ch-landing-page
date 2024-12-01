@@ -1,11 +1,13 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const AppHome = async () => {
-  return (
-    <Box>
-      hello world
-    </Box>
-  );
+	return (
+		<Box>
+			<Typography>
+				hello world
+			</Typography>
+		</Box>
+	);
 };
 
 export default AppHome;
