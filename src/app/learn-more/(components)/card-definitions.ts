@@ -1,12 +1,12 @@
-import React from 'react'
-import firstImage from "@/assets/images/learnmore-first.svg";
+import firstImage from "@/assets/images/learn-more-first.svg";
 
-export interface LearnMoreCardImageProps {
+export interface LearnMoreCardDefinition {
     title: string;
     description: string;
-    image: React.ReactNode;
+    image: string;
 }
-const cardDefinitions: LearnMoreCardImageProps[] = [
+
+const CardDefinitions: LearnMoreCardDefinition[] = [
     {
         title: "Web Development",
         description: "We build web applications using the latest technologies",
@@ -37,7 +37,7 @@ const cardDefinitions: LearnMoreCardImageProps[] = [
         description: "We build machine learning models using the latest technologies",
         image: firstImage.src
     }
-    
+
 ]
 
-export default cardDefinitions
+export default CardDefinitions;
