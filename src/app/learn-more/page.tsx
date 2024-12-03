@@ -1,6 +1,7 @@
 import CardDefinitions from '@/app/learn-more/(components)/card-definitions'
 import LearnMoreCard from '@/app/learn-more/(components)/learn-more-card'
 import React from 'react'
+import ContactUs from '../(components)/contact-us/contactUs'
 
 const Page = () => {
 	return (
@@ -18,6 +19,7 @@ const Page = () => {
 					/>
 				)
 			}
+			<ContactUs />
 		</div>
 	)
 }
