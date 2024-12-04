@@ -1,8 +1,10 @@
-'use client'; // Error components must be Client Components
+"use client";
 
-import WarningIcon from '@mui/icons-material/Warning';
-import { Box, Button } from '@mui/material';
-import Link from 'next/link';
+import Link from "next/link";
+
+import WarningIcon from "@mui/icons-material/Warning";
+import { Box, Button } from "@mui/material";
+
 
 const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void; }) => {
 	console.error(error);
@@ -10,13 +12,16 @@ const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: ()
 	return (
 		<main>
 			<section>
-				<Box sx={{ textAlign: 'center' }}>
+				<Box sx={{ textAlign: "center" }}>
 					<WarningIcon />
 					<h1>Oops, something went wrong!</h1>
+
 					<Box sx={{ m: 5 }}>
 						<Button onClick={reset}>Try again</Button>
 					</Box>
+
 					<Link href='/?slug=homepage'>Back to home</Link>
+
 					<div>
 						<Box
 							component="img"

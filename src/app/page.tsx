@@ -1,7 +1,8 @@
-import ContactUs from '@/app/(components)/contact-us/contactUs';
-import OurClients from '@/app/(components)/our-clients/our-clients';
-import OurServices from '@/app/(components)/our-services/our-services';
-import { Box } from '@mui/material';
+import { Box } from "@mui/material";
+
+import OurClients from "@/app/(components)/our-clients/our-clients";
+import OurServices from "@/app/(components)/our-services/our-services";
+
 
 const AppHome = () => {
 	return (
@@ -11,7 +12,7 @@ const AppHome = () => {
 		>
 			<OurClients />
 			<OurServices />
-			
+
 		</Box>
 	);
 };
