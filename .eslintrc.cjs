@@ -87,6 +87,12 @@ module.exports = {
           "requireLast": true
         }
       }
+    ],
+    "react/self-closing-comp": ["error",
+      {
+        "component": true,
+        "html": true
+      }
     ]
   },
   settings: {

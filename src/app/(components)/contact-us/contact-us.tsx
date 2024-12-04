@@ -139,7 +139,7 @@ const ContactUs = () => {
 							Name:
 						</Typography>
 
-						<TextField placeholder="Name"></TextField>
+						<TextField placeholder="Name" />
 
 						<Typography
 							variant="body1"
@@ -148,7 +148,7 @@ const ContactUs = () => {
 							Email:
 						</Typography>
 
-						<TextField placeholder="Email"></TextField>
+						<TextField placeholder="Email" />
 
 						<Typography
 							variant="body1"
@@ -157,7 +157,7 @@ const ContactUs = () => {
 							Subject:
 						</Typography>
 
-						<TextField placeholder="Subject"></TextField>
+						<TextField placeholder="Subject" />
 
 						<Typography
 							variant="body1"
@@ -169,8 +169,7 @@ const ContactUs = () => {
 						<TextareaAutosize
 							placeholder="Message"
 							style={{ height: "100px" }}
-						>
-						</TextareaAutosize>
+						/>
 
 						<Box display="flex">
 							<Button
