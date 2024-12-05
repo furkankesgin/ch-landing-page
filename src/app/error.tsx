@@ -14,6 +14,7 @@ const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: ()
 			<section>
 				<Box sx={{ textAlign: "center" }}>
 					<WarningIcon />
+
 					<h1>Oops, something went wrong!</h1>
 
 					<Box sx={{ m: 5 }}>

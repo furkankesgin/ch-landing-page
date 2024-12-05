@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+
 import { Roboto } from "next/font/google";
+
 import React from "react";
 
 import { CssBaseline, ThemeProvider } from "@mui/material";
@@ -30,6 +32,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 				<AppRouterCacheProvider>
 					<ThemeProvider theme={THEME}>
 						<CssBaseline />
+
 						{children}
 					</ThemeProvider>
 				</AppRouterCacheProvider>
