@@ -7,7 +7,7 @@ pnpm i
 
 2. Install git hooks
 ```shell
-pnpm run postinstall
+pnpm run prepare
 ```
 
 3. Run for dev
