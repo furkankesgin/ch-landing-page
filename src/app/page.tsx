@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 
-import OurClients from "@/app/(components)/our-clients/our-clients";
-import OurServices from "@/app/(components)/our-services/our-services";
+import OurClients from "@/app/components/our-clients/our-clients";
+import OurServices from "@/app/components/our-services/our-services";
 
 
 const AppHome = () => {
@@ -12,7 +12,6 @@ const AppHome = () => {
 		>
 			<OurClients />
 			<OurServices />
-
 		</Box>
 	);
 };

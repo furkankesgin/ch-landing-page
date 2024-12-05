@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 import { Box, Typography } from "@mui/material";
 
@@ -40,7 +40,7 @@ const ServiceCard = (props: ServiceCardProps) => {
 				{props.description}
 			</Typography>
 		</Box>
-	)
-}
+	);
+};
 
 export default ServiceCard;

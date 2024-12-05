@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import { Box, Button, Container, Grid2 as Grid, TextareaAutosize, TextField, Typography } from "@mui/material"
+import { Box, Button, Container, Grid2 as Grid, TextareaAutosize, TextField, Typography } from "@mui/material";
 
 
 const ContactUs = () => {
@@ -186,6 +186,6 @@ const ContactUs = () => {
 			</Box>
 		</Container >
 	);
-}
+};
 
-export default ContactUs
+export default ContactUs;

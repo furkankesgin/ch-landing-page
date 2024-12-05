@@ -1,16 +1,16 @@
-import Image from "next/image"
-import React from "react"
+import Image from "next/image";
+import React from "react";
 
-import { Box, Container, Typography } from "@mui/material"
+import { Box, Container, Typography } from "@mui/material";
 
-import { LearnMoreCardDefinition } from "@/app/learn-more/(components)/card-definitions";
+import { LearnMoreCardDefinition } from "@/app/learn-more/components/card-definitions";
 
 
-interface LearnMoreCardImageasdProps extends LearnMoreCardDefinition {
+interface LearnMoreCardProps extends LearnMoreCardDefinition {
 	variant: "left" | "right";
 }
 
-const LearnMoreCard = (props: LearnMoreCardImageasdProps) => {
+const LearnMoreCard = (props: LearnMoreCardProps) => {
 	return (
 		<Container>
 			<Box
@@ -57,7 +57,7 @@ const LearnMoreCard = (props: LearnMoreCardImageasdProps) => {
 				</Box>
 			</Box>
 		</Container>
-	)
-}
+	);
+};
 
 export default LearnMoreCard;

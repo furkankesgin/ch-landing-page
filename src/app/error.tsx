@@ -6,7 +6,7 @@ import WarningIcon from "@mui/icons-material/Warning";
 import { Box, Button } from "@mui/material";
 
 
-const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void; }) => {
+const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) => {
 	console.error(error);
 
 	return (
@@ -33,6 +33,6 @@ const Error = ({ error, reset }: { error: Error & { digest?: string }; reset: ()
 			</section>
 		</main>
 	);
-}
+};
 
 export default Error;

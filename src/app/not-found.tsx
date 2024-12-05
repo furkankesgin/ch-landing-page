@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 
 
 export const metadata: Metadata = {
-	title: "Not Found",
+	title: "Not Found"
 };
 
 const NotFound = () => {
@@ -35,6 +35,6 @@ const NotFound = () => {
 			</Box>
 		</main>
 	);
-}
+};
 
 export default NotFound;

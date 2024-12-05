@@ -1,8 +1,8 @@
-import React from "react"
+import React from "react";
 
-import ContactUs from "@/app/(components)/contact-us/contact-us"
-import CardDefinitions from "@/app/learn-more/(components)/card-definitions"
-import LearnMoreCard from "@/app/learn-more/(components)/learn-more-card"
+import CardDefinitions from "@/app/learn-more/components/card-definitions";
+import ContactUs from "@/app/learn-more/components/contact-us/contact-us";
+import LearnMoreCard from "@/app/learn-more/components/learn-more-card";
 
 
 const Page = () => {
@@ -22,7 +22,7 @@ const Page = () => {
 
 			<ContactUs />
 		</div>
-	)
-}
+	);
+};
 
 export default Page;

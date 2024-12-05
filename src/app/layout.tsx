@@ -18,12 +18,12 @@ const roboto = Roboto({
 	weight: ["300", "400", "500", "700"],
 	subsets: ["latin"],
 	display: "swap",
-	variable: "--font-roboto",
+	variable: "--font-roboto"
 });
 
 export const metadata: Metadata = AppMetadata.DefaultMetadata;
 
-const RootLayout = ({ children }: { children: React.ReactNode; }) => {
+const RootLayout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<html lang="en">
 			<body className={roboto.variable}>
@@ -36,6 +36,6 @@ const RootLayout = ({ children }: { children: React.ReactNode; }) => {
 			</body>
 		</html>
 	);
-}
+};
 
 export default RootLayout;

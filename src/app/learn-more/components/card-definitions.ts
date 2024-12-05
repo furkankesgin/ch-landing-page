@@ -39,6 +39,6 @@ const CardDefinitions: LearnMoreCardDefinition[] = [
 		image: firstImage.src
 	}
 
-]
+];
 
 export default CardDefinitions;
