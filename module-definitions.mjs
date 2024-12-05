@@ -8,14 +8,12 @@ export const ModuleConfig = createIndependentModules({
 	modules: [
 		{
 			name: "Core",
-			allowExternalImports: true,
 			pattern: "src/core/**",
 			errorMessage: "Core files are not allowed to import anything.",
 			allowImportsFrom: ["core/**"]
 		},
 		{
 			name: "Shared Components",
-			allowExternalImports: true,
 			pattern: "src/components/**",
 			errorMessage: "Shared components are not allowed to import anything.",
 			allowImportsFrom: [
@@ -32,7 +30,6 @@ export const ModuleConfig = createIndependentModules({
 		},
 		{
 			name: "Pages",
-			allowExternalImports: true,
 			pattern: "src/app/**",
 			errorMessage: "Pages are not allowed to import from this location.",
 			allowImportsFrom: [
@@ -47,7 +44,7 @@ export const ModuleConfig = createIndependentModules({
 				"src/service/**",
 				"src/theme/**",
 
-				"{family}/**"
+				"{family_3}/**"
 			]
 		}
 

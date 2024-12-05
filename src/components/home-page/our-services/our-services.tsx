@@ -1,8 +1,8 @@
 import { Box, Button, Container, Divider, Grid2 as Grid, Typography } from "@mui/material";
 
-import ServiceCards from "@/app/components/our-services/card-definitions";
-import ServiceCard from "@/app/components/our-services/service-card";
 import BbImage from "@/assets/images/our-services-bg.svg";
+import ServiceCards from "@/components/home-page/our-services/card-definitions";
+import ServiceCard from "@/components/home-page/our-services/service-card";
 
 
 const OurServices = () => {

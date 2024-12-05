@@ -47,7 +47,7 @@
 		"eslint-plugin-check-file": "2.8.0",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-module-bindings-newline": "^1.0.1",
-		"eslint-plugin-project-structure": "3.10.10",
+		"eslint-plugin-project-structure": "^3.10.11",
 		"eslint-plugin-react": "^7.37.2",
 		"eslint-plugin-react-hooks": "^5.0.0",
 		"eslint-plugin-unicorn": "^56.0.1",

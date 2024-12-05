@@ -3,7 +3,7 @@ import React from "react";
 
 import { Box, Container, Typography } from "@mui/material";
 
-import { LearnMoreCardDefinition } from "@/app/learn-more/components/card-definitions";
+import { LearnMoreCardDefinition } from "@/app/learn-more/(components)/card-definitions";
 
 
 interface LearnMoreCardProps extends LearnMoreCardDefinition {

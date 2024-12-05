@@ -1,7 +1,7 @@
 import ComputerIcon from "@mui/icons-material/Computer";
 import DevicesIcon from "@mui/icons-material/Devices";
 
-import { ServiceCardProps } from "@/app/components/our-services/service-card";
+import { ServiceCardProps } from "@/components/home-page/our-services/service-card";
 
 
 const ServiceCards: ServiceCardProps[] = [
