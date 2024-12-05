@@ -28,8 +28,6 @@
 		"zod": "^3.22.4"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.6.0",
-		"@commitlint/config-conventional": "19.6.0",
 		"@eslint/compat": "1.2.3",
 		"@eslint/eslintrc": "3.2.0",
 		"@eslint/js": "9.16.0",
@@ -59,15 +57,9 @@
 		"prettier": "^2.8.8",
 		"typescript": "5.7.2"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
 	"lint-staged": {
 		"**/*.{js,jsx,ts,tsx}": [
-			"./node_modules/.bin/eslint — fix",
-			"git add"
+			"eslint --cache --fix"
 		]
 	}
 }
