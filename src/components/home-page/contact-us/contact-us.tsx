@@ -10,7 +10,7 @@ const ContactUs = () => {
 	return (
 		<Container>
 			<Box
-				px={20}
+				// px={20}
 				py={10}
 			>
 				<Box textAlign="center">
