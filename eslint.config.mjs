@@ -89,27 +89,40 @@ export default [
 			}],
 
 			// Ts
-			"@stylistic/no-extra-parens": "error",
+			"@stylistic/no-extra-parens": "off",
 			"@stylistic/no-extra-semi": "error",
 			"@stylistic/object-curly-spacing": ["error", "always"],
 			"@stylistic/no-multiple-empty-lines": ["error", { "max": 3, "maxBOF": 0, "maxEOF": 1 }],
 			"@stylistic/comma-style": ["error", "last"],
 			"@stylistic/semi": ["error", "always", { "omitLastInOneLineClassBody": true, "omitLastInOneLineBlock": true }],
 			"@stylistic/type-annotation-spacing": "error",
+			"@typescript-eslint/no-unused-vars": [
+				"error",
+				{
+					"args": "all",
+					"argsIgnorePattern": "^_",
+					"caughtErrors": "all",
+					"caughtErrorsIgnorePattern": "^_",
+					"destructuredArrayIgnorePattern": "^_",
+					"varsIgnorePattern": "^_",
+					"ignoreRestSiblings": true
+				}
+			],
 
 			// React
+			// "react/jsx-props-no-multi-spaces": "error",
 			"react-refresh/only-export-components": "off",
 			"react/react-in-jsx-scope": "off",
 			"react/jsx-curly-brace-presence": ["error", { props: "never", children: "never" }],
-			"react/jsx-newline": ["error", { prevent: true, allowMultilines: true }],
-			"react/jsx-props-no-multi-spaces": "error",
+			"react/jsx-newline": ["error", { prevent: false, allowMultilines: false }],
 			"react/jsx-first-prop-new-line": ["error", "multiline"],
 			"react/jsx-max-props-per-line": ["error", { maximum: 1, when: "multiline" }],
 			"react/jsx-one-expression-per-line": ["error", { allow: "literal" }],
 			"react/jsx-closing-bracket-location": ["error", "tag-aligned"],
-			"react/jsx-closing-tag-location": "error",
+			"react/jsx-closing-tag-location": ["error", "tag-aligned"],
 			"react/jsx-child-element-spacing": "error",
 			"react/self-closing-comp": ["error", { component: true, html: true }],
+			"react/jsx-curly-newline": ["error", { multiline: "consistent", singleline: "consistent" }],
 
 			// Import
 			"import/newline-after-import": ["error", { count: 2 }],
@@ -122,8 +135,13 @@ export default [
 					["unknown"]
 				],
 				pathGroups: [
-					{ pattern: "next/**|react", group: "external", position: "before" },
+					{ pattern: "next", group: "external", position: "before" },
+					{ pattern: "next/**", group: "external", position: "before" },
+					{ pattern: "react", group: "external", position: "before" },
+					{ pattern: "react/**", group: "external", position: "before" },
 					{ pattern: "@mui/**", group: "external", position: "after" },
+					{ pattern: "!@/**", group: "external", position: "after" },
+					{ pattern: "@/core/**", group: "internal", position: "after" },
 					{ pattern: "@/**", group: "internal", position: "after" }
 				],
 				named: true,
@@ -136,11 +154,6 @@ export default [
 			"project-structure/independent-modules": ["error",
 				ModuleConfig
 			],
-			// "check-file/folder-naming-convention": ["error",
-			// 	{
-			// 		"./**": "KEBAB_CASE"
-			// 	}
-			// ],
 			"unicorn/filename-case": ["error",
 				{
 					"case": "kebabCase",

@@ -1,9 +1,13 @@
 import { Metadata } from "next";
+
 import Link from "next/link";
+
 import * as React from "react";
-import { RiAlarmWarningFill } from "react-icons/ri";
 
 import { Box } from "@mui/material";
+
+import { RiAlarmWarningFill } from "react-icons/ri";
+
 
 
 export const metadata: Metadata = {
@@ -21,7 +25,9 @@ const NotFound = () => {
 					/>
 
 					<h1>Page Not Found</h1>
+
 					<h5>change this in app/not-found.tsx</h5>
+
 					<Link href='/'>Back to home</Link>
 
 					<div>

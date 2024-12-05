@@ -15,8 +15,11 @@ const AppHome = () => {
 
 		>
 			<FirstSection />
+
 			<OurClients />
+
 			<OurServices />
+
 			<WhyJoinUs />
 		</Box>
 	);
