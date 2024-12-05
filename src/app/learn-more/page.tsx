@@ -1,8 +1,8 @@
 import React from "react";
 
 import CardDefinitions from "@/app/learn-more/(components)/card-definitions";
-import ContactUs from "@/app/learn-more/(components)/contact-us/contact-us";
 import LearnMoreCard from "@/app/learn-more/(components)/learn-more-card";
+import ContactUs from "@/components/home-page/contact-us/contact-us";
 
 
 const Page = () => {

@@ -1,5 +1,7 @@
-import { Box } from "@mui/material";
+import { Box } from "@mui/material";	
 
+import ContactUs from "@/components/home-page/contact-us/contact-us";
+import Faq from "@/components/home-page/faq/faq";
 import FirstSection from "@/components/home-page/first-section/first-section";
 import OurClients from "@/components/home-page/our-clients/our-clients";
 import OurServices from "@/components/home-page/our-services/our-services";
@@ -21,6 +23,11 @@ const AppHome = () => {
 			<OurServices />
 
 			<WhyJoinUs />
+
+			<Faq />
+
+			<ContactUs />
+
 		</Box>
 	);
 };
