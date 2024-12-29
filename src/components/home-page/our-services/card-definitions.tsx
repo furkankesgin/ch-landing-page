@@ -6,8 +6,8 @@ import { ServiceCardProps } from "@/components/home-page/our-services/service-ca
 
 const ServiceCards: ServiceCardProps[] = [
 	{
-		title: "Web Development",
-		description: "We build web applications using the latest technologies",
+		title: "Importance of Timely Completion and Cost Efficiency in Projects",
+		description: "Today, the timely completion and cost of a project have become critical issues for companies. Achieving this...",
 		icon:
 			<ComputerIcon
 				color="primary"
@@ -16,8 +16,8 @@ const ServiceCards: ServiceCardProps[] = [
 
 	},
 	{
-		title: "Mobile Development",
-		description: "We build mobile applications using the latest technologies",
+		title: "CodeHouse: Meeting Your Qualified Software Developer Needs",
+		description: "At CodeHouse, we address the need for qualified software developers across all sectors. Our company provides...",
 		icon:
 			<DevicesIcon
 				color="primary"
@@ -26,8 +26,8 @@ const ServiceCards: ServiceCardProps[] = [
 
 	},
 	{
-		title: "Desktop Development",
-		description: "We build desktop applications using the latest technologies",
+		title: "Optimizing Costs and Project Durations Through Outsourcing",
+		description: "By outsourcing the generic parts of their software development to CodeHouse, companies can concentrate on the...",
 		icon:
 			<ComputerIcon
 				color="primary"
@@ -36,8 +36,8 @@ const ServiceCards: ServiceCardProps[] = [
 
 	},
 	{
-		title: "DevOps",
-		description: "We build CI/CD pipelines using the latest technologies",
+		title: "Expert Hire",
+		description: "In line with the request of the companies, we also provide temporary staff rental service. It meets the competent...",
 		icon:
 			<ComputerIcon
 				color="primary"
@@ -46,20 +46,10 @@ const ServiceCards: ServiceCardProps[] = [
 
 	},
 	{
-		title: "Cloud",
-		description: "We build cloud applications using the latest technologies",
+		title: "Software",
+		description: "As everyone knows, all sectors need software. However, not every company has its own software department. At...",
 		icon:
 			<ComputerIcon
-				color="primary"
-				sx={{ fontSize: 100 }}
-			/>
-
-	},
-	{
-		title: "Machine Learning",
-		description: "We build machine learning models using the latest technologies",
-		icon:
-			<DevicesIcon
 				color="primary"
 				sx={{ fontSize: 100 }}
 			/>

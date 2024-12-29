@@ -14,14 +14,14 @@ const WhyJoinUs = () => {
 		<Container>
 			<Grid container spacing={2} p={10}>
 				<Grid size={{ xl: 6, md: 6, xs: 12 }} >
-					<Typography variant="h2" fontWeight={500}>Why Join Us</Typography>
+					<Typography variant="h2" fontWeight={500}>CodeHouse</Typography>
 
 					<ListItemIcon sx={{ py: 5, alignItems: "center" }}>
 						<ListItemIcon>
 							<DoneIcon color="success" />
 						</ListItemIcon>
 
-						<ListItemText primary= "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum voluptas quis cumque sunt magni ipsum adipisci nemo nulla doloribus?" />
+						<ListItemText primary= "Customer-oriented behavior is the key to our success. We are committed to providing the best possible service to our customers." />
 					</ListItemIcon>
 
 					<ListItemIcon sx={{ alignItems: "center" }}>
@@ -29,16 +29,10 @@ const WhyJoinUs = () => {
 							<DoneIcon color="success" />
 						</ListItemIcon>
 
-						<ListItemText primary= "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum voluptas quis cumque sunt magni ipsum adipisci nemo nulla doloribus?" />
+						<ListItemText primary= "CodeHouse,  is a leading global provider of telecom solutions, software products and services for communications networks. CodeHouse’s solutions enable network operators and service providers to monetize every potential connection beyond limits while enhancing subscriber experience." />
 					</ListItemIcon>
 
-					<ListItemIcon sx={{ alignItems: "center" }}>
-						<ListItemIcon>
-							<DoneIcon color="success" />
-						</ListItemIcon>
-
-						<ListItemText primary= "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum voluptas quis cumque sunt magni ipsum adipisci nemo nulla doloribus?" />
-					</ListItemIcon>
+	
 					
 				</Grid>
 

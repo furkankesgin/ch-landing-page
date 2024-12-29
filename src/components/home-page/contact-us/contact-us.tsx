@@ -1,12 +1,21 @@
+"use client";
+
+import Link from "next/link";
+
 import React from "react";
 
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import EmailIcon from "@mui/icons-material/Email";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import { Box, Button, Container, Grid2 as Grid, TextareaAutosize, TextField, Typography } from "@mui/material";
 
 
 const ContactUs = () => {
+	const [message, setMessage] = React.useState("");
+	const [name, setName] = React.useState("");
+	const [subject, setSubject] = React.useState("");
+
 	return (
 		<Container>
 			<Box
@@ -65,7 +74,9 @@ const ContactUs = () => {
 									variant="body2"
 									color="text.secondary"
 								>
-									123 Main Street, New York, NY 10030
+									Kagıthane Cad. Dap Vadi Y Blokları No:5 Ic kapı:54
+
+									Kagıthane / Istanbul
 								</Typography>
 							</Box>
 						</Box>
@@ -93,6 +104,33 @@ const ContactUs = () => {
 									color="text.secondary"
 								>
 									+1 123 456 7890
+								</Typography>
+							</Box>
+						</Box>
+
+						<Box
+							display="flex"
+							alignItems="center"
+							gap={2}
+							p={2}
+						>
+							<Box>
+								<EmailIcon />
+							</Box>
+
+							<Box>
+								<Typography
+									variant="h6"
+									color="text.primary"
+								>
+									Email:
+								</Typography>
+
+								<Typography
+									variant="body2"
+									color="text.secondary"
+								>
+									info@codehouse.com.tr
 								</Typography>
 							</Box>
 						</Box>
@@ -139,16 +177,10 @@ const ContactUs = () => {
 							Name:
 						</Typography>
 
-						<TextField placeholder="Name" />
-
-						<Typography
-							variant="body1"
-							color="text.primary"
-						>
-							Email:
-						</Typography>
-
-						<TextField placeholder="Email" />
+						<TextField
+							placeholder="Name"
+							onChange={e => setName(e.target.value)}
+						/>
 
 						<Typography
 							variant="body1"
@@ -157,7 +189,10 @@ const ContactUs = () => {
 							Subject:
 						</Typography>
 
-						<TextField placeholder="Subject" />
+						<TextField
+							placeholder="Subject"
+							onChange={e => setSubject(e.target.value)}
+						/>
 
 						<Typography
 							variant="body1"
@@ -169,12 +204,15 @@ const ContactUs = () => {
 						<TextareaAutosize
 							placeholder="Message"
 							style={{ height: "100px" }}
+							onChange={e => setMessage(e.target.value)}
 						/>
 
 						<Box display="flex">
 							<Button
 								variant="contained"
 								color="warning"
+								component={Link}
+								href={`mailto:info@codehouse.com.tr?subject=${subject}&body=${name}, ${message}`}
 								sx={{ alignSelf: "center", px: 8, py: 2 }}
 							>
 								Submit

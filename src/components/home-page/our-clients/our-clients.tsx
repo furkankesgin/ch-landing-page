@@ -4,10 +4,17 @@ import React from "react";
 
 import { Box, Container, Grid2 as Grid, Typography } from "@mui/material";
 
+import client3 from "@/assets/images/bac-logo.png";
+import client4 from "@/assets/images/borsa-pivot.png";
 import client1 from "@/assets/images/client-Turkcell.jpg";
+import client5 from "@/assets/images/defne-logo.svg";
+import client6 from "@/assets/images/lidya-madencilik.png";
+import client2 from "@/assets/images/tt-logo.svg";
 
 
+const customers = [client1, client2, client3, client4, client5, client6];
 const OurClients = () => {
+
 	return (
 		<Container>
 			<Box
@@ -29,57 +36,20 @@ const OurClients = () => {
 				</Typography>
 			</Box>
 
-			<Box display="flex">
-				<Box maxWidth={{ md: 500, xs: 250 }}>
-					<Image
-						width={0}
-						height={0}
-						layout="responsive"
-						src={client1}
-						alt="props.title"
-					/>
-				</Box>
+			<Box display="flex" width="100%" overflow="auto" justifyContent="start" alignItems="center">
 
-				<Box maxWidth={{ md: 500, xs: 250 }}>
-					<Image
-						width={0}
-						height={0}
-						layout="responsive"
-						src={client1}
-						alt="props.title"
-					/>
-				</Box>
-
-				<Box maxWidth={{ md: 500, xs: 250 }}>
-					<Image
-						width={0}
-						height={0}
-						layout="responsive"
-						src={client1}
-						alt="props.title"
-					/>
-				</Box>
-
-				<Box maxWidth={{ md: 500, xs: 250 }}>
-					<Image
-						width={0}
-						height={0}
-						layout="responsive"
-						src={client1}
-						alt="props.title"
-					/>
-				</Box>
-
-				<Box maxWidth={{ md: 500, xs: 250 }}>
-					<Image
-						width={0}
-						height={0}
-						layout="responsive"
-						src={client1}
-						alt="props.title"
-					/>
-				</Box>
+				{customers.map((customer, index) => 
+					<Box key={index} p={2}>
+						<Image
+							width={150}
+							height={0}
+							src={customer}
+							alt="customer"
+						/>
+					</Box>
+				)}
 			</Box>
+				
 
 			<Box>
 				<Grid
@@ -100,14 +70,15 @@ const OurClients = () => {
 								variant="h4"
 								color="white"
 							>
-								Problems come and get solved with ease
+								INNOVATIVE SOLUTIONS
 							</Typography>
 
 							<Typography
 								variant="body1"
 								color="white"
 							>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, nam. Suscipit delectus eligendi expedita eaque reprehenderit earum doloribus, facere quo.
+								CodeHouse,  is a leading global provider of telecom solutions, software products and services for communications networks. CodeHouse’s solutions enable network operators and service providers to monetize every potential connection beyond limits while enhancing subscriber experience.
+
 							</Typography>
 						</Box>
 					</Grid>

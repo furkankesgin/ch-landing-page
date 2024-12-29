@@ -49,7 +49,7 @@ const OurServices = () => {
 						Outsource
 					</Typography>
 
-					<Grid container spacing={2}>
+					<Grid container spacing={2} justifyContent="center">
 						{
 							ServiceCards.map(service =>
 								<Grid
