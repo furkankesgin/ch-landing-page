@@ -66,7 +66,7 @@ const OurServices = () => {
 						}
 					</Grid>
 
-					<Button sx={{ alignSelf: "center" }} variant="outlined" color="primary" href="/learn-more">Learn More</Button>
+					<Button sx={{ alignSelf: "center" }} variant="outlined" color="primary" href="/learn-more" target="_blank">Learn More</Button>
 				</Box>
 
 			</Container>
